@@ -1,0 +1,150 @@
+html, body{
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    /* height: 100vh; */
+    margin: 0;
+    /* margin-left: -196px; */
+    background-color: #000000;
+}
+
+div.slide {
+    font-size: 40px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0%;
+    margin-right: -2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    transition: all .3s ease-in-out;
+    filter: brightness(75%);
+    overflow: hidden;
+    /* -webkit-backface-visibility: hidden; */
+    transform: skew(-15deg);
+    transform-origin: bottom;
+    position: relative;
+}
+
+div.slide > * {
+    transform: skew(15deg) ;
+}
+
+
+div.slide img {
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.slide.is-active, .slide.is-target {
+    filter: brightness(100%);
+    flex-grow: 3;
+}
+
+.slide.is-active .text,  .slide.is-target .text{
+    opacity: 1;
+}
+
+.slide.is-active .text .your-level-wrapper, .slide.is-target .text .your-level-wrapper {
+    opacity: 1;
+}
+
+.slide .text svg,
+.slide .text img {
+    fill:rgb(255, 255, 255);
+    transition: all .2s ease;
+}
+
+.slide.slide.is-active .text svg {
+    fill: #916C58;
+}
+
+.text {
+    opacity: 0.6;
+    transition: all .3s ease-in-out;
+}
+.slide-1 .text {
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    cursor: pointer;
+}
+.slide-2 .text {
+    position: absolute;
+    bottom: calc(50% - 250px/2);
+    left: calc(50% - 227px/2);
+    cursor: pointer;
+}
+.slide-3 .text {
+    position: absolute;
+    bottom: 70px;
+    right: 208px;
+    cursor: pointer;
+}
+
+.your-level-wrapper {
+    opacity: 0;
+    position: absolute;
+    color: #FFFFFF;
+    transition: all .3s ease-in-out;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+.your-level-text {
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    line-height: 27px;
+}
+.your-level-go {
+    background: url("arrow-right.svg") no-repeat right;
+    width: 86px;
+    margin-top: 40px;
+    font-family: "Raleway Regular";
+    /* font-style: normal; */
+    /* font-weight: 300; */
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+
+}
+.your-level-go:hover {
+    background: url("arrow-right-hover.svg") no-repeat right
+}
+
+.your-level-go a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.slide.is-active .your-level-go, .slide.is-target .your-level-go {
+    opacity: 1;
+}
+
+.slide-1 .text .your-level-wrapper {
+    bottom: -131px;
+    left: 107px;
+}
+.slide-2 .text .your-level-wrapper {
+    align-items: center;
+    bottom: -124px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide-3 .text .your-level-wrapper {
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    left: -210px;
+}
