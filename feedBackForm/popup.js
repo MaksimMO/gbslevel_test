@@ -5,8 +5,13 @@ export default {
     `<div class="popup">
         <div class="title">Дякуємо,</div>
         <div class="description">Ваша заявка успішно надіслана</div>
-        <button><span>на головну сторінку</span></button>
+        <button @click="action"><span>на головну сторінку</span></button>
     </div>`,
+    methods:{
+        action(){
+            location.assign('/');
+        }
+    },
     mounted(){
         document.body.classList.add('is-popup-opened');
         console.log('onMounted!');

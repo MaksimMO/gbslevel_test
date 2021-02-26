@@ -27,6 +27,20 @@ body {
     color:#fff;
 }
 
+.feed_back_view .address{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.feed_back_view .logo{
+    width: 178px;
+    height:84px;
+    background: url('./g-level.svg') no-repeat;
+}
+
 .feed_back_view .text-1{
     text-align:center;
 }
@@ -75,6 +89,12 @@ button span{
 
 .input-wrapper label {
     order: -1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.55;
 }
 
 .input-wrapper + .input-wrapper {

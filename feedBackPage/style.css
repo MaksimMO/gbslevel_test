@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:url('background-page.svg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 102px 0 89px 0;
+    box-sizing: border-box;
+}
+
+body  > .image-1{
+    background:url('gbslevel-logo.svg') no-repeat;
+    width: 420px;
+    height:150px;
+}
+
+body  >  .text-1{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 63px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body  > .image-2{
+    background: url('background-1.svg') no-repeat center;
+    height: 202px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+}
+
+body  > .image-2 > .text-1{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 65px;    
+    letter-spacing: 0.1em;
+}
+
+body  > .image-2 > .text-2{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 86px;
+    color: black;
+    display: flex;
+}
+
+body  > .image-2 > .text-2 span{
+    letter-spacing: 14px;
+}
+
+body  > .image-2 > .text-2 > img {
+    margin: 0 25px 0 11px;
+}
+
+body > .contact-area {
+    font-family: Raleway;
+    font-weight: 700;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+body > .contact-area > .text-1{
+    
+    font-size: 33px;
+    letter-spacing: 0.2em;
+    margin-left: 50px;
+}
+
+body > .contact-area > .text-2{
+    font-size: 58px;
+    letter-spacing: 0.11em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+body > .contact-area > .text-3{
+    font-size: 33px;
+    letter-spacing: 0.1em;
+    margin-right: 50px;
+}
