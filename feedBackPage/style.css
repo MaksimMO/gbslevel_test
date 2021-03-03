@@ -11,7 +11,7 @@ html, body{
 }
 
 body {
-   
+
     background-size: cover;
     color: #fff;
     display: flex;
@@ -53,7 +53,7 @@ body  > .image-1{
 @media (min-width:768px) {
     body  > .image-1{
         width: 420px;
-        height:150px; 
+        height:150px;
     }
 }
 
@@ -63,7 +63,7 @@ body  >  .text-1{
     font-weight: 800;
     letter-spacing: 0.5em;
     text-transform: uppercase;
-    
+
 
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +221,7 @@ body > .contact-area > .text-1{
 }
 
 body > .contact-area > .text-2{
-   
+
     letter-spacing: 0.11em;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
@@ -240,7 +240,7 @@ body > .contact-area > .text-2{
 
 
 body > .contact-area > .text-3{
-    
+
     letter-spacing: 0.1em;
 }
 
@@ -270,4 +270,9 @@ body > .contact-area > svg{
     body > .contact-area > img {
         height: 12px;
     }
+}
+
+a[href^='tel:']{
+    text-decoration:none;
+    color:inherit;
 }
